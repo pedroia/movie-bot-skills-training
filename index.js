@@ -7,6 +7,7 @@ const loadMovieRoute = require('./discover-movies');
 const app = express();
 app.use(bodyParser.json());
 
+//load movie
 loadMovieRoute(app);
 
 app.post('/errors', function(req, res) {
