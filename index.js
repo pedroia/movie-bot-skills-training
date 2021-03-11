@@ -8,6 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 
 //load movie
+//add movie
 loadMovieRoute(app);
 
 app.post('/errors', function(req, res) {
